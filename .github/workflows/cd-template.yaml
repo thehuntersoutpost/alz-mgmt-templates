@@ -59,7 +59,7 @@ jobs:
   whatif:
     name: What If
     runs-on:
-      self-hosted
+      ubuntu-latest
     concurrency: mgmt-tfstate
     environment: alz-mgmt-plan
     permissions:
