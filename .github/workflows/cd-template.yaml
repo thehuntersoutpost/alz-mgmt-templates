@@ -361,7 +361,7 @@ jobs:
     needs: whatif
     if: ${{ always() && !contains(needs.*.result, 'failure') && !contains(needs.*.result, 'cancelled') }}
     runs-on:
-      self-hosted
+      ubuntu-latest
     concurrency: mgmt-tfstate
     environment: alz-mgmt-apply
     permissions:
